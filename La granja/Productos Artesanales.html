@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title> Productos Artesanales: </title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1> Productos Artesanales: </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"> inicio </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido_visible_paginas">
+        <section>
+            <div>
+                <h2> Productos Artesanales: </h2>
+                <p> Los <b> Productos Artesanales </b> son objetos que pueden crearse utilizando Equipo Artesanal. Pueden tardar desde unas horas hasta unos días (dentro del juego) en procesarse. La mayoría de los Productos Artesanales no tienen calidad de estrella, por lo que se ignora la calidad de estrella de los ingredientes utilizados. La única excepción es el Huevo de avestruz, cuya calidad de estrella del producto artesano coincidirá con la del ingrediente. </p>
+                <p> Si se elige la profesión Artesano al llegar al nivel 10 de Agricultura, los productos artesanales valdrán un 40% más (salvo el Aceite y el Café). Los tres siropes (Jarabe de arce, Resina de roble y Brea de pino) no se benefician de la Profesión de Artesano, y no se incluyen aquí. Sin embargo, en el juego se etiquetan como "Productos Artesanales". (En cambio, su valor se ve afectado por la Profesión de Resinador). </p>
+                <p> Un producto artesanal, la Piña Colada, sólo puede obtenerse en el balneario de la Isla Jengibre los Domingos, cuando Gus atiende allí el bar. </p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2> Tiempo de procesamiento </h2>
+                <p> Una hora = 60 minutos de 6 AM a 2 AM, pero 1 hora = 100 minutos de 2 AM a 6 AM. </p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2> Máquinas de producción </h2>
+                <p> Las máquinas de producción fabrican productos a lo largo del tiempo sin ninguna intervención adicional. </p>
+
+                <h3> Colmena </h3>
+                <p> Una colmena produce Miel Silvestre cada 4 días. </p>
+                <p> La colmena puede producir tipos únicos de miel cuando está al alcance de una flor crecida (en un radio de 5 casillas en cualquier dirección cardinal). Cuando hay más de un tipo de flor a su alcance, tiene prioridad la más cercana. </p>
+                <p> Las colmenas se pueden colocar dentro del Invernadero, pero no producirán miel. Las flores colocadas en Macetas tampoco harán que las colmenas produzcan miel de flores. </p>
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingredientes </th>
+                        <th> Origen de receta </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Colmena.png" alt="Colmena"> </td>
+                        <td> Colmena </td>
+                        <td> ¡Colócala fuera para obtener deliciosa miel! (Excepto en invierno). </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/ColmenaMadera.png" alt="ColmenaMadera"> Madera (40) </li>
+                                <li class="tabla_izquierda"> <img src="../img/ColmenaCarbon.png" alt="ColmenaCarbon"> Carbón (8) </li>
+                                <li class="tabla_izquierda"> <img src="../img/ColmenaLingoteDeHierro.png" alt="ColmenaLingoteDeHierro"> Lingote de hierro (1) </li>
+                                <li class="tabla_izquierda"> <img src="../img/ColmenaJarabeDeArce.png" alt="ColmenaJarabeDeArce"> Jarabe de arce (1) </li>
+                            </ul>
+                        </td>
+                        <td> <img src="../img/24px-Farming_Skill_Icon.png" alt=""> Agricultura nivel 3 </td>
+                    </tr>
+                </table>
+
+                <table class="diseño">
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Recupera </th>
+                        <th> Tiempo de proceso </th>
+                        <th> Disponibilidad </th>
+                        <th colspan="2"> Precio base de venta </th>
+                    </tr>
+                    <tr>
+                        <td rowspan="8"> <img src="../img/Miel.png" alt="Miel"> </td>
+                        <td rowspan="8"> Miel </td>
+                        <td rowspan="8"> <p class="tabla_izquierda"> Néctar dulce producido por las abejas. </p>
+                        </td>
+                        <td rowspan="8"> Incomestible </td> 
+                        <td rowspan="8"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 6720 min (≈4 días) </td>
+                        <td> Cualquier estación menos Invierno </td>
+                        <td class="tabla_izquierda"> Silvestre </td>
+                        <td> 100 <img src="../img/18px-Gold.png" alt="18px-Gold"> </td>
+                    </tr>
+                    <tr>
+                        <td class="tabla_izquierda"> <img src="../img/EstacionesPrimavera.png" alt="EstacionesPrimavera"> Primavera </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/ProductosArtesanalesTulipan.png" alt="ProductosArtesanalesTulipan" width="25"> Tulipán </li>
+                                <li class="tabla_izquierda"> <img src="../img/ProductosArtesanalesAlliumAzul.png" alt="ProductosArtesanalesAlliumAzul" width="25"> Allium azul </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> 160 <img src="../img/18px-Gold.png" alt="18px-Gold"> </li>
+                                <li> 200 <img src="../img/18px-Gold.png" alt="18px-Gold"> </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tabla_izquierda"> <img src="../img/EstacionesVerano.png" alt="EstacionesVerano"> Verano </td>
+                        <td> 
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/ProductosArtesanalesGirasol.png" alt="ProductosArtesanalesGirasol" width="25"> Girasol </li>
+                                <li class="tabla_izquierda"> <img src="../img/ProductosArtesanalesLentejuelaDeVerano.png" alt="ProductosArtesanalesLentejuelaDeVerano" width="25"> Lentejuela de verano </li>
+                                <li class="tabla_izquierda"> <img src="../img/ProductosArtesanalesAmapola.png" alt="ProductosArtesanalesAmapola" width="25"> Amapola </li>
+                            </ul>
+                        </td>
+                        <td> 
+                            <ul class="lista_imagen">
+                                <li> 260 <img src="../img/18px-Gold.png" alt="18px-Gold"> </li>
+                                <li> 280 <img src="../img/18px-Gold.png" alt="18px-Gold"> </li>
+                                <li> 380 <img src="../img/18px-Gold.png" alt="18px-Gold"> </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tabla_izquierda"> <img src="../img/EstacionesOtoño.png" alt="EstacionesOtoño"> Otoño </td>
+                        <td> 
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/ProductosArtesanalesGirasol.png" alt="ProductosArtesanalesGirasol" width="25"> Girasol </li>
+                                <li class="tabla_izquierda"> <img src="../img/ProductosArtesanalesRosaHada.png" alt="ProductosArtesanalesRosaHada" width="25"> Rosa hada </li>
+                            </ul>
+                        </td>
+                        <td> 
+                            <ul class="lista_imagen">
+                                <li> 260 <img src="../img/18px-Gold.png" alt="18px-Gold"> </li>
+                                <li> 680 <img src="../img/18px-Gold.png" alt="18px-Gold"> </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2> Máquinas de procesamiento </h2>
+                <p> Las máquinas de procesamiento toman un objeto y lo convierten en otro al cabo de un tiempo, normalmente de mayor valor. A diferencia de las máquinas de producción, las de procesamiento requieren que el jugador introduzca un objeto. </p>
+                <h3> Tonel </h3>
+                <p> Un tonel toma productos específicos y los añeja para incrementar su calidad y valor. El tiempo de añejamiento varía entre los productos. El vino es el que más tiempo requiere: 2 estaciones de envejecimiento para pasar de vino básico a vino de calidad iridio. </p>
+                <p> <b> Nota: </b> Se puede acelerar el tiempo de añejamiento en +1 nivel de calidad (al instante) si usas Polvo de hadas sobre el Tonel (1 Polvo de hadas por cada Tonel). </p>
+
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingredientes </th>
+                        <th> Origen de receta </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Tonel.png" alt="Tonel"> </td>
+                        <td> Tonel </td>
+                        <td> Utilízalo en la bodega para envejecer productos como el vino y el queso. </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/ColmenaMadera.png" alt="ColmenaMadera" width="25"> Madera (20) </li>
+                                <li class="tabla_izquierda"> <img src="../img/MaderaNoble.png" alt="MaderaNoble"> Madera noble (1) </li>
+                            </ul>
+                        </td>
+                        <td> Mejora de la casa de campo nivel 3 </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Ingrediente </th>
+                        <th> Calidad Base </th>
+                        <th> Calidad Plata (x 1.25) <img src="../img/SilverQuality.png" alt="SilverQuality"> </th>
+                        <th> Calidad Oro (x 1.5) <img src="../img/GoldQuality.png" alt="GoldQuality"> </th>
+                        <th> Calidad Iridio (x 2) <img src="../img/IridiumQuality.png" alt="IridiumQuality"> </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Vino.png" alt="Vino"> </td>
+                        <td> Vino </td>
+                        <td class="tabla_izquierda"> Cualquier Fruta (1) </td>
+                        <td> 3 x valor base de la Fruta </td>
+                        <td> 
+                            <p> (3 x base) x 1.25 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 14 Días </p>
+                        </td>
+                        <td> 
+                            <p> (3 x base) x 1.50 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 14 Días </p>
+                            <p class="parrafo_cursiva"> Total: 28 Días </p>
+                        </td>
+                        <td> 
+                            <p> (3 x base) x 2 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 28 Días </p>
+                            <p class="parrafo_cursiva"> Total: 56 Días </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/CervezaPalida.png" alt="CervezaPalida"> </td>
+                        <td> Cerveza pálida </td>
+                        <td class="tabla_izquierda"> <img src="../img/Lupulo.png" alt="Lupulo" width="25"> Lúpulo (1) </td>
+                        <td> 300 </td>
+                        <td> 
+                            <p> 375 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 9 Días </p>
+                        </td>
+                        <td> 
+                            <p> 450 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 8 Días </p>
+                            <p class="parrafo_cursiva"> Total: 17 Días </p>
+                        </td>
+                        <td> 
+                            <p> 600 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 17 Días </p>
+                            <p class="parrafo_cursiva"> Total: 34 Días </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Cerveza.png" alt="Cerveza"> </td>
+                        <td> Cerveza pálida </td>
+                        <td class="tabla_izquierda"> <img src="../img/Trigo.png" alt="Trigo" width="25"> Trigo (1) </td>
+                        <td> 200 </td>
+                        <td> 
+                            <p> 250 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 7 Días </p>
+                        </td>
+                        <td> 
+                            <p> 300 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 7 Días </p>
+                            <p class="parrafo_cursiva"> Total: 14 Días </p>
+                        </td>
+                        <td> 
+                            <p> 400 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 14 Días </p>
+                            <p class="parrafo_cursiva"> Total: 28 Días </p>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td> <img src="../img/Hidromiel.png" alt="Hidromiel"> </td>
+                        <td> Hidromiel </td>
+                        <td class="tabla_izquierda"> <img src="../img/Miel.png" alt="Miel" width="25"> Miel (1) </td>
+                        <td> 200 </td>
+                        <td> 
+                            <p> 250 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 7 Días </p>
+                        </td>
+                        <td> 
+                            <p> 300 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 7 Días </p>
+                            <p class="parrafo_cursiva"> Total: 14 Días </p>
+                        </td>
+                        <td> 
+                            <p> 400 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 14 Días </p>
+                            <p class="parrafo_cursiva"> Total: 28 Días </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Queso.png" alt="Queso"> </td>
+                        <td> Queso </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/Leche.png" alt="Leche" width="25"> Leche (1) o </li>
+                                <li class="tabla_izquierda"> <img src="../img/LecheXXL.png" alt="LecheXXL" width="25"> Leche XXL (1)</li>
+                            </ul>
+                        </td>
+                        <td> 230 </td>
+                        <td> 
+                            <p> 287 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 3 Días </p>
+                        </td>
+                        <td> 
+                            <p> 345 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 4 Días </p>
+                            <p class="parrafo_cursiva"> Total: 7 Días </p>
+                        </td>
+                        <td> 
+                            <p> 460 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 7 Días </p>
+                            <p class="parrafo_cursiva"> Total: 14 Días </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/QuesoDeCabra.png" alt="QuesoDeCabra"> </td>
+                        <td> Queso de cabra </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/LecheDeCabra.png" alt="LecheDeCabra" width="25"> Leche de cabra (1) o </li>
+                                <li class="tabla_izquierda"> <img src="../img/LecheDeCabraXXL.png" alt="LecheDeCabraXXL" width="25"> Leche de cabra XXL (1) </li>
+                            </ul>
+                        </td>
+                        <td> 400 </td>
+                        <td> 
+                            <p> 500 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 3 Días </p>
+                        </td>
+                        <td> 
+                            <p> 600 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 4 Días </p>
+                            <p class="parrafo_cursiva"> Total: 7 Días </p>
+                        </td>
+                        <td> 
+                            <p> 800 </p>
+                            <p class="parrafo_cursiva"> Envejecido: 7 Días </p>
+                            <p class="parrafo_cursiva"> Total: 14 Días </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3> Prensa de queso </h3>
+                <p> Utilizando una Leche XXL o Leche de cabra XXL, siempre dará un Queso o Queso de cabra de calidad oro. Utilizar Leche o Leche de cabra siempre te dará los quesos de calidad normal. </p>
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingredientes </th>
+                        <th> Origen de receta </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/PrensaDeQueso.png" alt="PrensaDeQueso"> </td>
+                        <td> Prensa de queso </td>
+                        <td> Convierte la leche en queso. </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/ColmenaMadera.png" alt="ColmenaMadera"> Madera (45) </li>
+                                <li class="tabla_izquierda"> <img src="../img/Piedra.png" alt="Piedra"> Piedra (45) </li>
+                                <li class="tabla_izquierda"> <img src="../img/MaderaNoble.png" alt="MaderaNoble"> Madera noble (10) </li>
+                                <li class="tabla_izquierda"> <img src="../img/LingoteDeCobre.png" alt="LingoteDeCobre"> Lingote de cobre (1) </li>
+                            </ul>
+                        </td>
+                        <td> <img src="../img/24px-Farming_Skill_Icon.png" alt=""> Agricultura nivel 6 </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingrediente </th>
+                        <th> Tiempo de proceso </th>
+                        <th> Precio de venta </th>
+                        <th> Recupera Energia <img src="../img/24px-Energia.png" alt="24px-Energia" width="20"> </th>
+                        <th> Recupera Salud <img src="../img/logoHealth.png" alt="logoHealth" width="20"> </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Queso.png" alt="Queso"> </td>
+                        <td class="tabla_izquierda"> Queso </td>
+                        <td class="tabla_izquierda"> Queso normal y corriente. </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/Leche.png" alt="Leche"> Leche (1) o </li>
+                                <li class="tabla_izquierda"> <img src="../img/LecheXXL.png" alt="LecheXXL"> Leche XXL (1)</li>
+                            </ul>
+                        </td>
+
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 200m (3h) </td>
+
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> 230 </li>
+                                <li class="tabla_izquierda"> 345 <img src="../img/GoldQuality.png" alt="GoldQuality"> </li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> 125 </li>
+                                <li class="tabla_izquierda"> 225 <img src="../img/GoldQuality.png" alt="GoldQuality"> </li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> 56 </li>
+                                <li class="tabla_izquierda"> 101 <img src="../img/GoldQuality.png" alt="GoldQuality"> </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/QuesoDeCabra.png" alt="QuesoDeCabra"> </td>
+                        <td class="tabla_izquierda"> Queso de cabra </td>
+                        <td class="tabla_izquierda"> Un queso blando hecho con leche de cabra. </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> <img src="../img/LecheDeCabra.png" alt="LecheDeCabra"> Leche de cabra (1) o </li>
+                                <li class="tabla_izquierda"> <img src="../img/LecheDeCabraXXL.png" alt="LecheDeCabraXXL"> Leche de cabra XXL (1) </li>
+                            </ul>
+                        </td>
+
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 200m (3h) </td>
+
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> 400 </li>
+                                <li class="tabla_izquierda"> 600 <img src="../img/GoldQuality.png" alt="GoldQuality"> </li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> 125 </li>
+                                <li class="tabla_izquierda"> 225 <img src="../img/GoldQuality.png" alt="GoldQuality"> </li>
+                            </ul>
+                        </td>
+
+                        <td>
+                            <ul class="lista_imagen">
+                                <li class="tabla_izquierda"> 56 </li>
+                                <li class="tabla_izquierda"> 101 <img src="../img/GoldQuality.png" alt="GoldQuality"> </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3> Barril </h3>
+                <p> <b> Nota: </b> Se puede acelerar el tiempo de producción al instante si usas Polvo de hadas sobre el Barril (1 Polvo de hadas por cada Barril). </p>
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingredientes </th>
+                        <th> Origen de receta </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Barril.png" alt="Barril"> </td>
+                        <td> Barril </td>
+                        <td class="tabla_izquierda"> Coloca aquí una fruta o una verdura. Al cabo del tiempo se convertirá en una bebida. </td>
+                        <td class="tabla_izquierda">
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/ColmenaMadera.png" alt="ColmenaMadera"> Madera (30) </li>
+                                <li> <img src="../img/LingoteDeCobre.png" alt="LingoteDeCobre"> Lingote de cobre (1) </li>
+                                <li> <img src="../img/ColmenaLingoteDeHierro.png" alt="ColmenaLingoteDeHierro"> Lingote de hierro (1) </li>
+                                <li> <img src="../img/ResinaDeRoble.png" alt="ResinaDeRoble"> Resina de roble (1) </li>
+                            </ul>
+                        </td>
+                        <td> <img src="../img/24px-Farming_Skill_Icon.png" alt="24px-Farming_Skill_Icon"> Agricultura nivel 8 </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingrediente </th>
+                        <th> Tiempo de Proceso </th>
+                        <th> Precio de Venta </th>
+                        <th> Recupera (Energia) <img src="../img/logoEnergy.png" alt="logoEnergy" width="20"> </th>
+                        <th> Recupera (Salud) <img src="../img/logoHealth.png" alt="logoHealth" width="20"> </th>
+                        <th> Extra </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Cerveza.png" alt="Cerveza"> </td>
+                        <td> Cerveza </td>
+                        <td class="tabla_izquierda"> Bebe con moderación. </td>
+                        <td class="tabla_izquierda"> <img src="../img/ListaTrigo.png" alt="ListaTrigo" width="20"> Trigo(1) </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 1750 mins (1-2 Días) </td>
+                        <td class="tabla_izquierda"> <img src="../img/18px-Gold.png" alt="18px-Gold"> 200 </td>
+                        <td class="tabla_izquierda"> 50 </td>
+                        <td class="tabla_izquierda"> 22 </td>
+                        <td class="tabla_izquierda"> <img src="../img/24px-Speed.png" alt="24px-Speed"> Velocidad(-1) </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/CervezaPalida.png" alt="CervezaPalida"> </td>
+                        <td> Cerveza Palida </td>
+                        <td class="tabla_izquierda"> Bebe con moderación. </td>
+                        <td class="tabla_izquierda"> <img src="../img/Lupulo.png" alt="Lupulo" width="20"> Lúpulo(1) </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 2250 mins (1-2 Días) </td>
+                        <td class="tabla_izquierda"> <img src="../img/18px-Gold.png" alt="18px-Gold"> 300 </td>
+                        <td class="tabla_izquierda"> 50 </td>
+                        <td class="tabla_izquierda"> 22 </td>
+                        <td class="tabla_izquierda"> <img src="../img/24px-Speed.png" alt="24px-Speed"> Velocidad(-1) </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Vino.png" alt="Vino"> </td>
+                        <td> Vino </td>
+                        <td class="tabla_izquierda"> Bebe con moderación. </td>
+                        <td class="tabla_izquierda"> Cualquier Fruta (1) </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 10000 mins (≈7 Días) </td>
+                        <td class="tabla_izquierda"> 3 x Valor base de la Fruta </td>
+                        <td class="tabla_izquierda"> 50 </td>
+                        <td class="tabla_izquierda"> 22 </td>
+                        <td class="tabla_izquierda"> <img src="../img/24px-Speed.png" alt="24px-Speed"> Velocidad(-1) </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Zumo.png" alt="Zumo"> </td>
+                        <td> Zumo </td>
+                        <td class="tabla_izquierda"> Una bebida dulce y nutritiva. </td>
+                        <td class="tabla_izquierda"> Cualquier Vegetal (1) </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 6000 mins (≈4 Días) </td>
+                        <td class="tabla_izquierda"> 2.25 x Valor base del Vegetal </td>
+                        <td class="tabla_izquierda"> 75 </td>
+                        <td class="tabla_izquierda"> 33 </td>
+                        <td class="tabla_izquierda"> Ninguno </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Hidromiel.png" alt="Hidromiel"> </td>
+                        <td> Hidromiel </td>
+                        <td class="tabla_izquierda"> Una bebida fermentada hecha con miel. Bebe con moderación. </td>
+                        <td class="tabla_izquierda"> <img src="../img/Miel.png" alt="Miel" width="25"> Miel (1) </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 600 mins (10 horas) </td>
+                        <td class="tabla_izquierda"> <img src="../img/18px-Gold.png" alt="18px-Gold"> 300 </td>
+                        <td class="tabla_izquierda"> 75 </td>
+                        <td class="tabla_izquierda"> 33 </td>
+                        <td class="tabla_izquierda"> <img src="../img/24px-Speed.png" alt="24px-Speed"> Velocidad(-1) </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/Cafe.png" alt="Cafe"> </td>
+                        <td> Cafe </td>
+                        <td class="tabla_izquierda"> Huele de maravilla. Seguro que te da energía. </td>
+                        <td class="tabla_izquierda"> <img src="../img/PrimaveraGranoDeCafe.png" alt="PrimaveraGranoDeCafe" width="20"> Grano de café (5) </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 120 mins (2 horas) </td>
+                        <td class="tabla_izquierda"> <img src="../img/18px-Gold.png" alt="18px-Gold"> 150 </td>
+                        <td class="tabla_izquierda"> 3 </td>
+                        <td class="tabla_izquierda"> 1 </td>
+                        <td class="tabla_izquierda"> <img src="../img/24px-Speed.png" alt="24px-Speed"> Velocidad(-1) </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/EnergiaTeVerde.png" alt="EnergiaTeVerde"> </td>
+                        <td> Té verde </td>
+                        <td class="tabla_izquierda"> Una agradable, energizante bebida fabricada con hojas de té procesadas. </td>
+                        <td class="tabla_izquierda"> <img src="../img/ListaHojasDeTe.png" alt="ListaHojasDeTe" width="20"> Hojas de té (1) </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 180 mins (3 horas) </td>
+                        <td class="tabla_izquierda"> <img src="../img/18px-Gold.png" alt="18px-Gold"> 100 </td>
+                        <td class="tabla_izquierda"> 13 </td>
+                        <td class="tabla_izquierda"> 5 </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaMaximaEfecto.png" alt="EnergiaMaximaEfecto"> Energía máx. (+30) </td>
+                    </tr>
+                </table>
+
+                <h3> Telar </h3>
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingredientes </th>
+                        <th> Origen de receta </th>
+                    </tr>
+                    <tr>
+                        <td> <img src="../img/" alt=""> </td>
+                        <td> Telar </td>
+                        <td> Convierte la lana virgen en tela. </td>
+                        <td class="tabla_izquierda">
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/ColmenaMadera.png" alt="ColmenaMadera"> Madera (60) </li>
+                                <li> <img src="../img/" alt=""> Fibra vegetal (30) </li>
+                                <li> <img src="../img/" alt=""> Brea de pino (1) </li>
+                            </ul>
+                        </td>
+                        <td> <img src="../img/24px-Farming_Skill_Icon.png" alt="24px-Farming_Skill_Icon"> Agricultura nivel 7 </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingredientes </th>
+                        <th> Origen de receta </th>
+                    </tr>
+                    <tr>
+                        <td> <img src="../img/" alt=""> </td>
+                        <td> Tela </td>
+                        <td> Un rollo de tejido lanoso. </td>
+                        <td class="tabla_izquierda">
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/Lana.png" alt="Lana" width="25"> Lana (1)
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="tabla_izquierda">
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px" width="25"> 4 Horas </li>
+                            </ul>
+                        </td>
+                        <td> <img src="../img/18px-Gold.png" alt="18px-Gold"> 470 </td>
+                    </tr>
+                </table>
+
+                <h3> Mayonesera </h3>
+                <p> Todos los huevos se pueden convertir en Mayonesa. Con un huevo de gallina normal se obtiene una mayonesa de calidad normal, mientras que con un Huevo XXL se obtiene una mayonesa de calidad Oro. Con un Huevo dorado se obtienen tres tarros de mayonesa de calidad dorada. </p>
+                <p> Un Huevo de avestruz produce diez (10) tarros de Mayonesa a la vez con la misma calidad que el huevo utilizado. Este es el único caso en el que importa la calidad del ingrediente. </p>
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingredientes </th>
+                        <th> Tiempo de proceso </th>
+                        <th> Precio de venta </th>
+                        <th> Recupera (Energia) <img src="../img/logoEnergy.png" alt="logoEnergy" width="20"> </th>
+                        <th> Recupera (Salud) <img src="../img/logoHealth.png" alt="logoHealth" width="20"> </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/" alt=""> </td>
+                        <td> Mayonesa </td>
+                        <td class="tabla_izquierda"> Da ganas de untarla. </td>
+                        <td class="tabla_izquierda"> 
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/Huevo.png" alt="Huevo" width="25"> Huevo (1) o </li>
+                                <li> <img src="../img/HuevoXXL.png" alt="HuevoXXL" width="25"> Huevo XXL (1) o </li>
+                                <li> <img src="../img/HuevoDeAvestruz.png" alt="HuevoDeAvestruz" width="25"> Huevo de avestruz (1) o </li>
+                                <li> <img src="../img/HuevoDorado.png" alt="HuevoDorado" width="25"> Huevo dorado (1) </li>
+                            </ul>
+                        </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px" width="25"> 3 Horas </td>
+                        <td class="tabla_izquierda"> 
+                            <ul class="lista_imagen">
+                                <li> 190 </li>
+                                <li> 237 <img src="../img/SilverQuality.png" alt="SilverQuality"> </li>
+                                <li> 285 <img src="../img/GoldQuality.png" alt="GoldQuality"> </li>
+                                <li> 380 <img src="../img/IridiumQuality.png" alt="IridiumQuality"> </li>
+                            </ul>
+                        </td>
+                        <td class="tabla_izquierda"> 50 </td>
+                        <td class="tabla_izquierda"> 22 </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/" alt=""> </td>
+                        <td> Mayonesa de pato </td>
+                        <td class="tabla_izquierda"> Una mayonesa rica y amarilla. </td>
+                        <td class="tabla_izquierda"> 
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/HuevoDePato.png" alt="HuevoDePato" width="25"> Huevo de pato (1) </li>
+                            </ul>
+                        </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px" width="25"> 3 Horas </td>
+                        <td class="tabla_izquierda"> 
+                            <ul class="lista_imagen">
+                                <li> 375 </li>
+                            </ul>
+                        </td>
+                        <td class="tabla_izquierda"> 75 </td>
+                        <td class="tabla_izquierda"> 33 </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/" alt=""> </td>
+                        <td> Mayonesa dinosaurio </td>
+                        <td class="tabla_izquierda"> Es gruesa y cremosa, con un vívido matiz verde. Huele a hierba y cuero. </td>
+                        <td class="tabla_izquierda"> 
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/HuevoDeDinosaurio.png" alt="HuevoDeDinosaurio" width="25"> Huevo de dinosaurio (1) </li>
+                            </ul>
+                        </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px" width="25"> 3 Horas </td>
+                        <td class="tabla_izquierda"> 
+                            <ul class="lista_imagen">
+                                <li> 800 </li>
+                            </ul>
+                        </td>
+                        <td class="tabla_izquierda"> 126 </td>
+                        <td class="tabla_izquierda"> 56 </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/" alt=""> </td>
+                        <td> Mayonesa sombría </td>
+                        <td class="tabla_izquierda"> Una pasta densa y oscura que huele a pelo quemado. </td>
+                        <td class="tabla_izquierda"> 
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/HuevoSombrio.png" alt="HuevoSombrio" width="25"> Huevo sombrío (1) </li>
+                            </ul>
+                        </td>
+                        <td class="tabla_izquierda"> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px" width="25"> 3 Horas </td>
+                        <td class="tabla_izquierda"> 
+                            <ul class="lista_imagen">
+                                <li> 275 </li>
+                            </ul>
+                        </td>
+                        <td colspan="2"> 
+                            <p class="tabla_izquierda"> <img src="../img/Calabera.png" alt="Calabera"> -75 </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <h3> Aceitera </h3>
+                <table>
+                    <tr>
+                        <th> Imagen </th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Ingredientes </th>
+                        <th> Origen de receta </th>
+                    </tr>
+                    <tr>
+                        <td> <img src="../img/" alt=""> </td>
+                        <td> Aceitera </td>
+                        <td class="tabla_izquierda"> Produce un delicioso aceite de trufa. </td>
+                        <td class="tabla_izquierda">  
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/" alt="" width="25"> Baba (50) </li>
+                                <li> <img src="../img/MaderaNoble.png" alt="MaderaNoble" width="25"> Madera noble (20) </li>
+                                <li> <img src="../img/" alt="" width="25"> Lingote de oro (1) </li>
+                            </ul>
+                        </td>
+                        <td> <img src="../img/24px-Farming_Skill_Icon.png" alt="24px-Farming_Skill_Icon"> Agricultura nivel 8 </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <tr>
+                        <th>  </th>
+                        <th>  </th>
+                        <th>  </th>
+                        <th>  </th>
+                        <th>  </th>
+                        <th>  </th>
+                    </tr>
+                    <tr>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                        <td>  </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3> Links: </h3>
+            <ul class= "lista_imagen">
+                <li><a href="https://stardew.info/planner/" target="_blank"> Planificador de tu granja </a></li>
+                <li><a href="https://es.stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank"> Pagina Oficial </a></li>
+                <li><a href="https://thorinair.github.io/Stardew-Profits/#produce_0-equipment_0-sellRaw_false-aging_0-planted_1-maxSeedMoney_0-days_28-fertilizer_0-level_0-season_0-buySeed_false-replant_false-nextyear_false-buyFert_false-average_0-fertilizerSource_0-seeds_(pierre_true-joja_true-special_true)-skills_(till_false-agri_false-arti_false-gatherer_false-botanist_false)-foodIndex_0-foodLevel_0-extra_true-disableLinks_false-crossSeason_false-foragingLevel_0" target="_blank"> Stardew Profits </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

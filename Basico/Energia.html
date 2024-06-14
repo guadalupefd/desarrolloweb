@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <title> Energia: </title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1> Energia: </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"> inicio </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido_visible_paginas">
+        <section>
+            <div>
+                <h2> Energia: </h2>
+                <p> Un jugador requiere Energía para usar herramientas, con la excepción de guadañas, armas y la Batea de cobre, Recoger o mover un cofre con las manos vacías también requiere energía. La energía disponible se indica en la barra de energía del jugador, que va disminuyendo a medida que avanza el día. </p>
+                <p> La energía se puede reponer al máximo comiendo alimentos con energía positiva. El consumo de alimentos de energía negativa como Savia o Mayonesa sombría reduce la energía. Para consumir alimentos, colóquelos en la barra de acceso rápido (la fila superior del inventario) y click-derecho. Una notificación en la parte inferior izquierda de la pantalla mostrará la energía y la salud obtenidas al comer. Normalmente, los alimentos más caros proporcionan más energía que los alimentos más baratos. </p>
+                <p> Estando en el Spa también restaura la energía a 10 puntos por segundo. En el Multijugador, los jugadores pueden recuperar energía lentamente estando en la cama a 2 puntos por segundo. (Si aparece el diálogo "Vete a la cama", responde "No" y permanece en el lugar). </p>
+                <img src="../img/EnergyBar.png" alt="EnergyBar">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2> Agotamiento: </h2>
+                <p> El jugador se agota al llegar a 0 de energía, indicado por una burbuja de diálogo X sobre la cabeza del jugador y el aviso "Te sientes lento por el esfuerzo excesivo". La velocidad de movimiento del jugador se reduce significativamente y las cañas de pescar ya no se pueden lanzar. Se pueden utilizar otras herramientas que consuman energía, pero el nivel de energía del jugador se vuelve negativo. A -15 de energía, el jugador se desmaya, terminando el día. Si el jugador se desmaya en cualquier lugar fuera de la casa, el jugador perderá el 10% de su dinero hasta <img src="../img/18px-Gold.png" alt="18px-Gold"> 1000. </p>
+                <p> Aumentar la energía nuevamente por encima de cero (por ejemplo, al comer alimentos) restaurará el movimiento del jugador y permitirá que las cañas de pescar se lancen de nuevo, pero el jugador permanece exhausto por el resto del día. No hay ningún indicador en el juego de este agotamiento persistente, pero da como resultado una reducción del 50% en la restauración de energía de esa noche. Este efecto posterior se puede evitar curando el agotamiento, ya sea consumiendo Relajante muscular, o (si está Casado) besando al cónyuge del jugador por primera vez en el día. </p>
+                <p> Existen algunas señales de advertencia para notificar al jugador antes de un agotamiento inminente. Si la energía es inferior a 20, cualquier actividad que consuma energía hace que la barra de energía se agite y emita gotas de sudor. Cuando la energía cae por primera vez por debajo de los 15, aparece un aviso que dice "Empiezas a sentirte agotado". Estas son advertencias, no indicadores de un verdadero agotamiento, y no tienen ningún efecto sobre las actividades del jugador o la restauración de energía durante la noche. </p>
+                <img src="../img/Exhausted.png" alt="Exhausted">
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <section>
+                    <div>
+                        <h2> Dormir: </h2>
+                        <p> Dormir restaura el nivel de energía inicial del jugador para el día siguiente. Acostarse a las 12:00 AM o antes normalmente restaura la energía al máximo. Sin embargo, si el jugador se acuesta tarde, se desmaya o está agotado, la cantidad de energía recuperada se reduce. </p>
+                        <p> Si el jugador se duerme agotado, el sueño elimina el agotamiento, pero la restauración de energía se reduce al 50%. La restauración de energía también se reduce si el jugador se acuesta después de las 12:00AM. Esta reducción se acumula con la penalización por agotamiento. </p>
+                        <p> La cantidad de reducción de energía se ha calculado en la tabla siguiente: </p>
+                    </div>
+                </section>
+        
+                <section>
+                    <div>
+                        <table>
+                            <tr> <th colspan="2"> Pérdida por Dormir Tarde </th> </tr>
+                            <tr>
+                                <th> Hora </th>
+                                <th> Energía Perdida </th>
+                            </tr>
+                            <tr>
+                                <td> 12:10AM </td>
+                                <td> -2.5% </td>
+                            </tr>
+                            <tr>
+                                <td> 12:20AM </td>
+                                <td> -5% </td>
+                            </tr>
+                            <tr>
+                                <td> 12:30AM </td>
+                                <td> -7.5% </td>
+                            </tr>
+                            <tr>
+                                <td> 12:40AM </td>
+                                <td> -10% </td>
+                            </tr>
+                            <tr>
+                                <td> 12:50AM </td>
+                                <td> -12.5% </td>
+                            </tr>
+                            <tr>
+                                <td> 1:00AM </td>
+                                <td> -25% </td>
+                            </tr>
+                            <tr>
+                                <td> 1:10AM </td>
+                                <td> -27.5% </td>
+                            </tr>
+                            <tr>
+                                <td> 1:20AM </td>
+                                <td> -30% </td>
+                            </tr>
+                            <tr>
+                                <td> 1:30AM </td>
+                                <td> -32.5% </td>
+                            </tr>
+                            <tr>
+                                <td> 1:40AM </td>
+                                <td> -35% </td>
+                            </tr>
+                            <tr>
+                                <td> 1:50AM </td>
+                                <td> -37.5% </td>
+                            </tr>
+                            <tr>
+                                <td> 2:00AM </td>
+                                <td> -50% </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                
+                <section>
+                    <div>
+                        <p> Si el nivel de energía inicial calculado del nuevo día es más bajo que el nivel de energía real del jugador en el momento en que se fue a dormir, el nivel de energía del jugador no cambia ni se reduce, a menos que esté exhausto. Un jugador no puede empezar un día con menos de 1 energía. </p>
+        
+                        <h3> Subir de nivel: </h3>
+                        <p> La mañana después de que se sube de nivel una habilidad (o después de cambiar de profesión en la Estatua de la Incertidumbre), el jugador se despierta con toda la energía, independientemente del cálculo de sueño o agotamiento. </p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2> Restauración </h2>
+                <p> Además de dormir, se pueden realizar ciertas acciones para restaurar la energía. Estas incluyen: usar el Spa, estar en una Cama mientras juegas Multijugador, y comer ciertos objetos comestibles. </p>
+                <ul>
+                    <li> Mientras te relajas en el spa o nadas, la energía y la salud del jugador aumentan en 1 cada 100 milisegundos hasta que ambas barras estén llenas, si no te has movido recientemente. </li>
+                    <li> Mientras se está en una cama en multijugador, la energía y la salud del jugador aumentan en 1 cada 500 milisegundos hasta que ambas barras estén llenas. </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h3> Energía máxima: </h3>
+                <p> El jugador comienza el juego con 270 energía máxima. Comer una Fruta estelar aumenta permanentemente la energía máxima en 34 puntos. Comer cada Fruta estelar disponible en el juego aumenta permanentemente la energía máxima a 508. </p>
+                <p> También son posibles aumentos temporales de la energía máxima. Se pueden activar hasta dos Bonificadores de energía simultáneamente: uno de una bebida (es decir, Té verde) y otro de una comida. El mayor valor temporal posible de energía máxima es, por tanto, 588. </p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <table>
+                    <tr>
+                        <th> Imagen	 </th>
+                        <th> Nombre </th>
+                        <th> Descripcion </th>
+                        <th> Ingredientes </th>
+                        <th> Energia/Salud </th>
+                        <th> Duracion </th>
+                        <th> Precio de venta </th>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/EnergiaEstofadoDeJudias.png" alt="EnergiaEstofadoDeJudias"> </td>
+                        <td> Estofado de judías </td>
+                        <td> Saludable, sin lugar a dudas. </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaJudiaVerde.png" alt="EnergiaJudiaVerde"> Judía verde (2) </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/24px-Energia.png" alt="Energia"> 125 </li>
+                                <li> <img src="../img/24px-Salud.png" alt="Salud"> 56 </li>
+                            </ul>
+                        </td>
+                        <td>  
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 7m </li>
+                            </ul>
+                        </td>
+                        <td>  
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/18px-Gold.png" alt="18px-Gold"> 100 </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/EnegiaDesayunoInglés.png" alt="EnegiaDesayunoInglés"> </td>
+                        <td> Desayuno inglés </td>
+                        <td> ¡Te hace sentir listo para comerte el mundo! </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaHuevoFrito.png" alt="EnergiaHuevoFrito"> Huevo frito (1) </li>
+                                <li> <img src="../img/EnergiaLeche.png" alt="EnergiaLeche"> Leche (1) </li>
+                                <li> <img src="../img/EnergiaCroquetaDePatata.png" alt="EnergiaCroquetaDePatata"> Croquetas de patata (1) </li>
+                                <li> <img src="../img/EnergiaTortitas.png" alt="EnergiaTortitas"> Tortitas (1) </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/24px-Energia.png" alt="Energia"> 200 </li>
+                                <li> <img src="../img/24px-Salud.png" alt="Salud"> 56 </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 7m </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/18px-Gold.png" alt="18px-Gold"> 350 </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/EnergiaTeVerde.png" alt="EnergiaTeVerde"> </td>
+                        <td> Té verde </td>
+                        <td> Una agradable, energizante bebida fabricada con hojas de té procesadas. </td>
+                        <td> 
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaHojasDeTe.png" alt="EnergiaHojasDeTe"> Hojas de té (1) </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/24px-Energia.png" alt="Energia"> 13 </li>
+                                <li> <img src="../img/24px-Salud.png" alt="Salud"> 5 </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 4m 12s </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/18px-Gold.png" alt="18px-Gold"> 100 </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/EnergiaCremaDeLangosta.png" alt="EnergiaCremaDeLangosta"> </td>
+                        <td> Crema de langosta </td>
+                        <td> Esta delicada sopa es una receta familiar secreta de Willy. </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaLangosta.png" alt="EnergiaLangosta"> Langosta (1) </li>
+                                <li> <img src="../img/EnergiaLeche.png" alt="EnergiaLeche"> Leche (1) </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/24px-Energia.png" alt="Energia"> 225 </li>
+                                <li> <img src="../img/24px-Salud.png" alt="Salud"> 101 </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 16m 47s </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/18px-Gold.png" alt="18px-Gold"> 205 </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/EnergiaPlatoRojo.png" alt="EnergiaPlatoRojo"> </td>
+                        <td> Plato rojo </td>
+                        <td> Lleno de antioxidantes. </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaLombarda.png" alt="EnergiaLombarda"> Lombarda (1) </li>
+                                <li> <img src="../img/EnergiaRabano.png" alt="EnergiaRabano"> Rabano (1) </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/24px-Energia.png" alt="Energia"> 240 </li>
+                                <li> <img src="../img/24px-Salud.png" alt="Salud"> 108 </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 3m 30s </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/18px-Gold.png" alt="18px-Gold"> 400 </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/EnergiaSuperComida.png" alt="Supercomida"> </td>
+                        <td> Supercomida </td>
+                        <td> Una comida realmente vigorizante. </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaColChina.png" alt="EnergiaColChina"> Col china (1) </li>
+                                <li> <img src="../img/EnergiaGrosella.png" alt="EnergiaGrosella"> Grosella (1) </li>
+                                <li> <img src="../img/EnergiaAlcachofa.png" alt="EnergiaAlcachofa"> Alcachofa (1) </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/24px-Energia.png" alt="Energia"> 160 </li>
+                                <li> <img src="../img/24px-Salud.png" alt="Salud"> 72 </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 3m 30s </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/18px-Gold.png" alt="18px-Gold"> 250 </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td> <img src="../img/EnergiaSopaTomKha.png" alt="EnergiaSopaTomKha"> </td>
+                        <td> Sopa Tom Kha </td>
+                        <td> ¡Una combinación de sabores increíbles! </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/EnergiaCoco.png" alt="EnergiaCoco"> Coco (1) </li>
+                                <li> <img src="../img/EnergiaGamba.png" alt="EnergiaGamba"> Gamba (1) </li>
+                                <li> <img src="../img/EnergiaSetaComun.png" alt="EnergiaSetaComun"> Seta comun (1) </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/24px-Energia.png" alt="Energia"> 175 </li>
+                                <li> <img src="../img/24px-Salud.png" alt="Salud"> 78 </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <img src="../img/EnergiaTimeIcon24px.png" alt="EnergiaTimeIcon24px"> 7m </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="lista_imagen">
+                                <li> <img src="../img/18px-Gold.png" alt="18px-Gold"> 250 </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3> Links: </h3>
+            <ul class= "lista_imagen">
+                <li><a href="https://stardew.info/planner/" target="_blank"> Planificador de tu granja </a></li>
+                <li><a href="https://es.stardewvalleywiki.com/Stardew_Valley_Wiki" target="_blank"> Pagina Oficial </a></li>
+                <li><a href="https://thorinair.github.io/Stardew-Profits/#produce_0-equipment_0-sellRaw_false-aging_0-planted_1-maxSeedMoney_0-days_28-fertilizer_0-level_0-season_0-buySeed_false-replant_false-nextyear_false-buyFert_false-average_0-fertilizerSource_0-seeds_(pierre_true-joja_true-special_true)-skills_(till_false-agri_false-arti_false-gatherer_false-botanist_false)-foodIndex_0-foodLevel_0-extra_true-disableLinks_false-crossSeason_false-foragingLevel_0" target="_blank"> Stardew Profits </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
